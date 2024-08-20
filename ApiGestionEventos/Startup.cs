@@ -51,7 +51,7 @@ namespace ApiProyectoPatata
 
                     Title = "Sweet Dreams.API",
                     Version = "v1",
-                    Description = "Api Para Sweet Dreams.",
+                    Description = "Api Para Sistema de Gestion de Eventos.",
                     TermsOfService = new Uri("https://sample.com/terms"),
                     Contact = new OpenApiContact
                     {
@@ -97,7 +97,7 @@ namespace ApiProyectoPatata
                 {
                     opt.AddPolicy(name: _policyName, builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200", "https://sweet-comunity.netlify.app")// builder.WithOrigins("http://localhost:4200", "http://localhost:50544")
+                        builder.WithOrigins("http://localhost:4200", "https://sweet-comunity.netlify.app", "http://localhost:1234")// builder.WithOrigins("http://localhost:4200", "http://localhost:1234")
                             .AllowAnyHeader()
                             .AllowCredentials()
                             .AllowAnyMethod();

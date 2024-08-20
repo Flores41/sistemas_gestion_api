@@ -79,7 +79,6 @@ namespace Repository.Administration
                     parameters.Add("@p_iid_profile", request.iid_profile);
                     parameters.Add("@p_vname_profile", request.vname_profile);
                     parameters.Add("@p_vdescription_profile", request.vdescription_profile);
-                    parameters.Add("@p_buser_member", request.buser_member);                    
 
                     parameters.Add("@p_istate_record", request.istate_record);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);

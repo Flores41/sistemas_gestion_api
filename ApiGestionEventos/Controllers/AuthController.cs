@@ -149,7 +149,7 @@ namespace ApiSistemaVentas.Controllers
 
                     /********* token usuario ************/
                     ITokenParameters tparm = new ITokenParameters();
-                    tparm.UserName = _user.vchannel_twitch_user;
+                    tparm.UserName = _user.vnumber_document;
                     tparm.PasswordHash = _user.vpassword_user;
                     tparm.Id = _user.iid_user.ToString();
                     tparm.FechaCaduca = DateTime.Now;
