@@ -1,0 +1,578 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiProyectoPatata\\ApiSistemaVentas.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj",
+        "projectName": "Abstraction",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiProyectoPatata\\ApiSistemaVentas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiProyectoPatata\\ApiSistemaVentas.csproj",
+        "projectName": "ApiSistemaVentas",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiProyectoPatata\\ApiSistemaVentas.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiProyectoPatata\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\Aplication.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\Aplication.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\Aplication.csproj",
+        "projectName": "Aplication",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\Aplication.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Abstraction\\Abstraction.csproj"
+              },
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,647 @@
+[
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "DeleteTableDetail",
+    "RelativePath": "Administration/AuxiliaryTables/DeleteTableDetail",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_table_detail",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "DeleteTableHead",
+    "RelativePath": "Administration/AuxiliaryTables/DeleteTableHead",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_table_headboard",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "GetListTableDetail",
+    "RelativePath": "Administration/AuxiliaryTables/GetListTableDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.TableDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "GetListTableDetailCB",
+    "RelativePath": "Administration/AuxiliaryTables/GetListTableDetailCB",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_table_headboard",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "GetListTableHead",
+    "RelativePath": "Administration/AuxiliaryTables/GetListTableHead",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.TableHeadBoardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "RegisterTableDetail",
+    "RelativePath": "Administration/AuxiliaryTables/RegisterTableDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.TableDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.AuxiliaryTablesController",
+    "Method": "RegisterTableHead",
+    "RelativePath": "Administration/AuxiliaryTables/RegisterTableHead",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.TableHeadBoardDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "DeleteModule",
+    "RelativePath": "Administration/ModuleOption/DeleteModule",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_module",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "DeleteOption",
+    "RelativePath": "Administration/ModuleOption/DeleteOption",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_option",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "GetListModule",
+    "RelativePath": "Administration/ModuleOption/GetListModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ModuleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "GetListOption",
+    "RelativePath": "Administration/ModuleOption/GetListOption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.OptionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "GetListOptionsByModule",
+    "RelativePath": "Administration/ModuleOption/GetListOptionsByModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.OptionByModuleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "RegisterModule",
+    "RelativePath": "Administration/ModuleOption/RegisterModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ModuleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ModuleOptionController",
+    "Method": "RegisterOption",
+    "RelativePath": "Administration/ModuleOption/RegisterOption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.OptionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "DeleteProfile",
+    "RelativePath": "Administration/Profiles/DeleteProfile",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_profile",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "DeleteProfileAccess",
+    "RelativePath": "Administration/Profiles/DeleteProfileAccess",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_profile_access",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "GetListProfile",
+    "RelativePath": "Administration/Profiles/GetListProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "GetListProfileAccess",
+    "RelativePath": "Administration/Profiles/GetListProfileAccess",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ProfileAccessDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "GetListProfileAccessByProfile",
+    "RelativePath": "Administration/Profiles/GetListProfileAccessByProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_profile",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "RegisterProfile",
+    "RelativePath": "Administration/Profiles/RegisterProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "RegisterProfileAccess",
+    "RelativePath": "Administration/Profiles/RegisterProfileAccess",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ProfileAccessDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.ProfileController",
+    "Method": "RegisterProfileOption",
+    "RelativePath": "Administration/Profiles/RegisterProfileOption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.ProfileAccessRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "Administration/Users/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_user",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.UsersController",
+    "Method": "GetListUserByParameter",
+    "RelativePath": "Administration/Users/GetListUserByParameter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.UserByParameterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.UsersController",
+    "Method": "GetListUsers",
+    "RelativePath": "Administration/Users/GetListUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Administration.UsersController",
+    "Method": "RegisterUser",
+    "RelativePath": "Administration/Users/RegisterUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Administration.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Usuario.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.ComunityController",
+    "Method": "DeleteComunity",
+    "RelativePath": "Masters/Comunity/DeleteComunity",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_comunity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.ComunityController",
+    "Method": "GetListComunity",
+    "RelativePath": "Masters/Comunity/GetListComunity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.ComunityDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.ComunityController",
+    "Method": "RegisterComunity",
+    "RelativePath": "Masters/Comunity/RegisterComunity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Microsoft.AspNetCore.Http.IFormCollection",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.RangeController",
+    "Method": "DeleteRange",
+    "RelativePath": "Masters/Range/DeleteRange",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_range",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.RangeController",
+    "Method": "GetListRange",
+    "RelativePath": "Masters/Range/GetListRange",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.RangeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.RangeController",
+    "Method": "RegisterRange",
+    "RelativePath": "Masters/Range/RegisterRange",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.RangeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "DeleteShedule",
+    "RelativePath": "Masters/Shedule/DeleteShedule",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_shedule_weekly",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "DeleteSheduleAll",
+    "RelativePath": "Masters/Shedule/DeleteSheduleAll",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iid_shedule_weekly",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "GetListDayAvailableByWeek",
+    "RelativePath": "Masters/Shedule/GetListDayAvailableByWeek",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.SheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "GetListHourAvailableByDay",
+    "RelativePath": "Masters/Shedule/GetListHourAvailableByDay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.SheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "GetListShedule",
+    "RelativePath": "Masters/Shedule/GetListShedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.SheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "GetListSheduleByWeek",
+    "RelativePath": "Masters/Shedule/GetListSheduleByWeek",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.SheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiSistemaVentas.Controllers.Masters.SheduleController",
+    "Method": "RegisterShedule",
+    "RelativePath": "Masters/Shedule/RegisterShedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.Masters.SheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
