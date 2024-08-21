@@ -51,8 +51,7 @@
               "RelativeToolTip": "ApiGestionEventos\\Startup.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAgwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:34:15.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T16:34:15.25Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Repository\\Administration\\UsersRepository.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAQwIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:30:50.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T16:30:50.459Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Repository\\Administration\\ModuleOptionRepository.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAAlwMwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:30:31.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T16:30:31.771Z"
             }
           ]
         }
