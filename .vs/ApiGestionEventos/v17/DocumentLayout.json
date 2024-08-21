@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\repository\\administration\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|solutionrelative:repository\\administration\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\administration\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\administration\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\repository\\administration\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|solutionrelative:repository\\administration\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\controllers\\administration\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\controllers\\administration\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\masters\\rangedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\masters\\rangedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\repository\\administration\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|solutionrelative:repository\\administration\\usersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\masters\\comunitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\masters\\comunitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\usuario\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\usuario\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\paginationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\paginationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\models\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F75698D6-70AE-43C2-A230-547EDF1782B7}|Models\\Models.csproj|solutionrelative:models\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\repository\\administration\\moduleoptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|solutionrelative:repository\\administration\\moduleoptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,140 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProfileRepository.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\ProfileRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Administration\\ProfileRepository.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\ProfileRepository.cs",
-              "RelativeToolTip": "Repository\\Administration\\ProfileRepository.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAqwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T07:20:48.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Administration\\ProfileDto.cs",
-              "RelativeDocumentMoniker": "Models\\Administration\\ProfileDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Administration\\ProfileDto.cs",
-              "RelativeToolTip": "Models\\Administration\\ProfileDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T07:20:35.016Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiGestionEventos\\appsettings.json",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\appsettings.json",
-              "RelativeToolTip": "ApiGestionEventos\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T07:07:44.289Z",
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\Administration\\ProfileController.cs",
+              "RelativeDocumentMoniker": "ApiGestionEventos\\Controllers\\Administration\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\Administration\\ProfileController.cs",
+              "RelativeToolTip": "ApiGestionEventos\\Controllers\\Administration\\ProfileController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T16:34:46.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Startup.cs",
               "RelativeDocumentMoniker": "ApiGestionEventos\\Startup.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Startup.cs",
               "RelativeToolTip": "ApiGestionEventos\\Startup.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAgwGMAAACCAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAgwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T07:04:10.146Z"
+              "WhenOpened": "2024-08-20T16:34:15.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\UsersRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Administration\\UsersRepository.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\UsersRepository.cs",
               "RelativeToolTip": "Repository\\Administration\\UsersRepository.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAowF4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:48:14.37Z"
+              "WhenOpened": "2024-08-20T16:30:50.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ApiGestionEventos\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ApiGestionEventos\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAuwJwAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ModuleOptionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\ModuleOptionRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Administration\\ModuleOptionRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Administration\\ModuleOptionRepository.cs",
+              "RelativeToolTip": "Repository\\Administration\\ModuleOptionRepository.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAlwMwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:47:05.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RangeDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Masters\\RangeDto.cs",
-              "RelativeDocumentMoniker": "Models\\Masters\\RangeDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Masters\\RangeDto.cs",
-              "RelativeToolTip": "Models\\Masters\\RangeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:46:57.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ComunityDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Masters\\ComunityDto.cs",
-              "RelativeDocumentMoniker": "Models\\Masters\\ComunityDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Masters\\ComunityDto.cs",
-              "RelativeToolTip": "Models\\Masters\\ComunityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:46:54.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthDTO.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Usuario\\AuthDTO.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario\\AuthDTO.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\Usuario\\AuthDTO.cs",
-              "RelativeToolTip": "Models\\Usuario\\AuthDTO.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwA0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:46:28.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PaginationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\PaginationDTO.cs",
-              "RelativeDocumentMoniker": "Models\\PaginationDTO.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\PaginationDTO.cs",
-              "RelativeToolTip": "Models\\PaginationDTO.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:46:16.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ResultDTO.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\ResultDTO.cs",
-              "RelativeDocumentMoniker": "Models\\ResultDTO.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Models\\ResultDTO.cs",
-              "RelativeToolTip": "Models\\ResultDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T06:46:15.312Z"
+              "WhenOpened": "2024-08-20T16:30:31.771Z"
             }
           ]
         }

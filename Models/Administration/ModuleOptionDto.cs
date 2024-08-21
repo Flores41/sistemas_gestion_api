@@ -30,12 +30,9 @@ namespace Models.Administration
         public string? vicon_option { get; set; }
         public int? iid_module { get; set; }
         public int? iorder_option { get; set; }
-        public int? iid_comunity { get; set; }
 
         public Boolean? bvisible_option { get; set; }
-
-
-        
+                
     }
 
     public class OptionByModuleDto : AuditoriaDto
@@ -54,9 +51,6 @@ namespace Models.Administration
         public int? iorder_option { get; set; }
         public string? vicon_option { get; set; }
         public string? vurl_option { get; set; }
-
-        public int? iid_comunity { get; set; }
-
 
     }
 

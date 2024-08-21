@@ -110,7 +110,6 @@ namespace ApiSistemaVentas.Controllers.Administration
                     vname_profile = request.vname_profile,
                     vdescription_profile = request.vdescription_profile,
                     istate_record = request.istate_record,
-                    buser_member =request.buser_member ,
                     iid_user_token = request.iid_user_token
                 };
 

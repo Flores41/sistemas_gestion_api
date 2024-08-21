@@ -13,8 +13,6 @@ namespace Models.Administration
         public string? vcode_profile { get; set; }
         public string? vname_profile { get; set; }
         public string? vdescription_profile { get; set; }
-        public bool? buser_member { get; set; }
-
         
     }
 
@@ -40,8 +38,6 @@ namespace Models.Administration
         public int? iid_profile { get; set; }
         public string? vname_profile { get; set; }
         public string? vdescription_profile { get; set; }
-        public bool? buser_member { get; set; }
-
         public List<ProfileAccessDTO> lstOptions { get; set; }
     }
 

@@ -10,12 +10,6 @@ using DataAccess.CustomConnection;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Abstraction.IRepository.Masters;
-using Repository.Masters;
-using Aplication.Masters;
-using Services.Masters;
-using Abstraction.IAplication.Masters;
-using Abstraction.IService.Masters;
 using Services;
 using Abstraction;
 using Application.Auth;
@@ -155,17 +149,6 @@ namespace ApiProyectoPatata
             services.AddScoped<IProfileService,     ProfileService>();
             services.AddScoped<IProfileRepository,  ProfileRepository>();
 
-            services.AddScoped<IComunityAplication, ComunityAplication>();
-            services.AddScoped<IComunityService,    ComunityService>();
-            services.AddScoped<IComunityRepository, ComunityRepository>();
-
-            services.AddScoped<ISheduleAplication,  SheduleAplication>();
-            services.AddScoped<ISheduleService,     SheduleService>();
-            services.AddScoped<ISheduleRepository,  SheduleRepository>();
-
-            services.AddScoped<IRangeAplication,    RangeAplication>();
-            services.AddScoped<IRangeService    ,   RangeService>();
-            services.AddScoped<IRangeRepository,    RangeRepository>();
             #endregion
 
 

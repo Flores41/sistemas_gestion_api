@@ -46,11 +46,9 @@ namespace Repository.Administration
                 parameters.Add("@p_itype_document", request.itype_document);
                 parameters.Add("@p_inumber_document", request.inumber_document);
                 parameters.Add("@p_vphone", request.vphone);
-                parameters.Add("@p_idepartment", request.iid_department);
+                parameters.Add("@p_idepartment", request.iid_addrres);
                 parameters.Add("@p_iid_profile", request.iid_profile);
                 parameters.Add("@p_vaddress", request.vaddress);
-                parameters.Add("@p_iid_comunity", request.iid_comunity);
-                parameters.Add("@p_iid_time_zone", request.iid_time_zone);
 
                 parameters.Add("@p_istate_record", request.istate_record);
                 parameters.Add("@p_index", request.iindex);
@@ -129,12 +127,7 @@ namespace Repository.Administration
                     parameters.Add("@p_iid_profile", request.iid_profile);
                     //parameters.Add("@p_vaddress", request.vaddress);
 
-                    parameters.Add("@p_iid_range_member", request.iid_range_member);
-                    parameters.Add("@p_vurl_channel_twitch", request.vurl_channel_twitch);
-                    parameters.Add("@p_vchannel_twitch", request.vchannel_twitch);
-                    parameters.Add("@p_iid_comunity", request.iid_comunity);
-                    parameters.Add("@p_iid_time_zone", request.iid_time_zone);
-                                        
+                                       
                     parameters.Add("@p_istate_record", request.istate_record); 
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
 

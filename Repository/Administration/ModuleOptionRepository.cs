@@ -162,7 +162,6 @@ namespace Repository.Administration
                 parameters.Add("@p_iid_module", request.iid_module);
                 parameters.Add("@p_vdescription_option", request.vdescription_option);
                 parameters.Add("@p_vname_option", request.vname_option);
-                parameters.Add("@p_iid_comunity", request.iid_comunity);
                 
                 parameters.Add("@p_istate_record", request.istate_record);
                 parameters.Add("@p_index", request.iindex);
@@ -203,10 +202,7 @@ namespace Repository.Administration
                     parameters.Add("@p_vurl_option", request.vurl_option);
                     parameters.Add("@p_vicon_option", request.vicon_option);
                     parameters.Add("@p_iorder_option", request.iorder_option);
-                    parameters.Add("@p_bvisible_option", request.bvisible_option);
-
-                    parameters.Add("@p_iid_comunity", request.iid_comunity);
-                    
+                    parameters.Add("@p_bvisible_option", request.bvisible_option);                  
 
                     parameters.Add("@p_istate_record", request.istate_record);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
