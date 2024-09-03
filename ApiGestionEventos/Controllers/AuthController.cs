@@ -157,7 +157,51 @@ namespace ApiSistemaVentas.Controllers
                     resLogin.Token = this.iITokenHandlerService.GenerateToken(tparm);
 
                     _user.vpassword_user = null;
-                    itemLogin.menu = _menu.Data.FindAll(p => p.baccess_view == true);
+                    itemLogin.menu = _menu.Data.FindAll(p => (bool)p.baccess_view).Select(x => new MenuUsuario
+                    {
+                        iid_module = x.iid_module,
+                        vname_module = x.vname_module,
+                        vdescription_module = x.vdescription_module,
+                        iorder_module = x.iorder_module,
+                        vurl_module = x.vurl_module,
+                        vicon_module    = x.vicon_module,
+
+                        iid_option = x.iid_option,
+                        vname_option = x.vname_option,
+                        vdescription_option = x.vdescription_option,
+                        iorder_option   = x.iorder_option,
+                        vicon_option = x.vicon_option,
+                        vurl_option =x.vurl_option,
+
+                        baccess_view =x.baccess_view,
+                        baccess_create =x.baccess_create,
+                        baccess_update = x.baccess_update,
+                        baccess_delete = x.baccess_delete,
+                        bsub_menu_module = x.bsub_menu_module
+
+                    }).ToList();
+
+                    /*
+                        public int? iid_module { get; set; }
+                        public string? vname_module { get; set; }
+                        public string? vdescription_module { get; set; }
+                        public int? iorder_module { get; set; }
+                        public string? vurl_module { get; set; }
+                        public string? vicon_module { get; set; }
+
+                        public int? iid_option { get; set; }
+                        public string? vname_option { get; set; }
+                        public string? vdescription_option { get; set; }
+                        public int? iorder_option { get; set; }
+                        public string? vicon_option { get; set; }
+                        public string? vurl_option { get; set; }
+
+                        public bool? baccess_view { get; set; }
+                        public bool? baccess_create { get; set; }
+                        public bool? baccess_update { get; set; }
+                        public bool? baccess_delete { get; set; }
+                     
+                     */
                     itemLogin.userdata = _user;
 
                     resLogin.IsSuccess = true;

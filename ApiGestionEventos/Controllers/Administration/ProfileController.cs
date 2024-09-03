@@ -134,7 +134,6 @@ namespace ApiSistemaVentas.Controllers.Administration
                 res.MessageExeption = resProfile.MessageExeption;
                 res.Message = resProfile.Message;
 
-
                 return Ok(res);
             }
             catch (Exception e)

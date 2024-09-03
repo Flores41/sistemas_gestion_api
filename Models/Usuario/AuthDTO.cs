@@ -36,7 +36,34 @@ namespace Models.Usuario
     public class AuthenticationResponse
     {
         public UserByParameterDto userdata { get; set; }
-        public object menu { get; set; }
+        public List<MenuUsuario> menu { get; set; }
+    }
+
+
+    public class MenuUsuario
+    {
+        public int? iid_module { get; set; }
+        public string? vname_module { get; set; }
+        public string? vdescription_module { get; set; }
+        public int? iorder_module { get; set; }
+        public string? vurl_module { get; set; }
+        public string? vicon_module { get; set; }
+
+        public int? iid_option { get; set; }
+        public string? vname_option { get; set; }
+        public string? vdescription_option { get; set; }
+        public int? iorder_option { get; set; }
+        public string? vicon_option { get; set; }
+        public string? vurl_option { get; set; }
+
+        public bool? baccess_view { get; set; }
+        public bool? baccess_create { get; set; }
+        public bool? baccess_update { get; set; }
+        public bool? baccess_delete { get; set; }
+        public bool? bsub_menu_module { get; set; }
+
+        
+
     }
 
 }

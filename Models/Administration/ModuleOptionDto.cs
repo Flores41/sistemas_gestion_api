@@ -52,6 +52,9 @@ namespace Models.Administration
         public string? vicon_option { get; set; }
         public string? vurl_option { get; set; }
 
+        public bool? bsub_menu_module { get; set; }
+
+
     }
 
 
