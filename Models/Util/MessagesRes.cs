@@ -28,8 +28,4 @@ namespace Model.Util
         public static string strLogeoNoExitoso = "Credenciales Incorrectas";
     }
 
-    public static class FolderFirebase
-    {
-        public static string strFolderComunity = "Comunidades";
-    }
 }

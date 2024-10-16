@@ -26,7 +26,5 @@ namespace Model
         public Boolean NormalAvailable { get; set; }
         public string HoraAgenda { get; set; }
         public Boolean SheduleByDayAndHourAvailable { get; set; }
-
-
     }
 }

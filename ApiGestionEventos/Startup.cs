@@ -70,7 +70,7 @@ namespace ApiProyectoPatata
 
 
 
-            /**/
+           
             if (fglfrom == "1")
             {
                 services.AddCors(opt =>

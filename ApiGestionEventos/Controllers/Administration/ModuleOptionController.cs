@@ -1,10 +1,15 @@
 ﻿using Abstraction.IAplication.Administration;
 using Aplication.Administration;
+using Aplication.Util;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Model;
 using Models.Administration;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using NPOI.SS.Formula.Functions;
+using NPOI.SS.UserModel;
 using System.Security.Claims;
 
 namespace ApiSistemaVentas.Controllers.Administration
@@ -12,7 +17,6 @@ namespace ApiSistemaVentas.Controllers.Administration
     [Route("Administration/ModuleOption/")]
     [ApiController]
     [Authorize]
-
     public class ModuleOptionController : Controller
     {
         private IModuleOptionAplication iIModuleOptionAplication;
@@ -48,6 +52,7 @@ namespace ApiSistemaVentas.Controllers.Administration
             }
         }
 
+
         [HttpPost]
         [Route("RegisterModule")]
         public async Task<ActionResult> RegisterModule([FromBody] ModuleDto request)
@@ -69,6 +74,7 @@ namespace ApiSistemaVentas.Controllers.Administration
                 return BadRequest(res);
             }
         }
+
 
         [HttpDelete]
         [Route("DeleteModule")]
@@ -94,6 +100,7 @@ namespace ApiSistemaVentas.Controllers.Administration
             }
         }
 
+
         [HttpPost]
         [Route("GetListOption")]
         public async Task<ActionResult> GetListOption([FromBody] OptionDto request)
@@ -114,6 +121,7 @@ namespace ApiSistemaVentas.Controllers.Administration
                 return BadRequest(res);
             }
         }
+
 
         [HttpPost]
         [Route("RegisterOption")]
@@ -137,6 +145,7 @@ namespace ApiSistemaVentas.Controllers.Administration
                 return BadRequest(res);
             }
         }
+
 
         [HttpDelete]
         [Route("DeleteOption")]
@@ -163,8 +172,6 @@ namespace ApiSistemaVentas.Controllers.Administration
         }
 
 
-
-
         [HttpPost]
         [Route("GetListOptionsByModule")]
         public async Task<ActionResult> GetListOptionsByModule([FromBody] OptionByModuleDto request)
@@ -185,6 +192,8 @@ namespace ApiSistemaVentas.Controllers.Administration
                 return BadRequest(res);
             }
         }
+
+
 
     }
 }
