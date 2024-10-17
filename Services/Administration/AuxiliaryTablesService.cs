@@ -52,5 +52,11 @@ namespace Services.Administration
         }
         #endregion
 
+
+        public Task<ResultDTO<UbigeoDto>> GetListUbigeo(UbigeoDto request)
+        {
+            return this._IAuxiliaryTablesRepository.GetListUbigeo(request);
+        }
+
     }
 }

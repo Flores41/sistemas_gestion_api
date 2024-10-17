@@ -17,7 +17,7 @@ namespace Model
     }
     public class AuditoriaDto :PaginationDTO
     {
-        public int? iid_user_token { get; set; }
+        public int? iid_user_token { get; set; }//id del usuario que se obtiene del token 
 
         public int? iexport { get; set; }
 

@@ -21,10 +21,5 @@ namespace Model
 
         public byte[] File { get; set; }
 		public int iTotal_record { get; set; }
-        public Boolean SheduleAvailable { get; set; }
-        public Boolean VipAvailable { get; set; }
-        public Boolean NormalAvailable { get; set; }
-        public string HoraAgenda { get; set; }
-        public Boolean SheduleByDayAndHourAvailable { get; set; }
     }
 }

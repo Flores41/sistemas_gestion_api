@@ -119,7 +119,7 @@ namespace Repository.Administration
                     parameters.Add("@p_vfirst_name", request.vfirst_name);
                     parameters.Add("@p_vlast_name", request.vlast_name);
                     //parameters.Add("@p_vcode", request.vcode);
-                    //parameters.Add("@p_vemail", request.vemail);
+                    parameters.Add("@p_vemail", request.vemail);
                     //parameters.Add("@p_itype_document", request.itype_document);
                     //parameters.Add("@p_inumber_document", request.inumber_document);
                     parameters.Add("@p_iphone", request.vphone);

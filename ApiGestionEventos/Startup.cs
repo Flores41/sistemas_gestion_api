@@ -19,6 +19,12 @@ using Abstraction.IService.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Abstraction.IAplication.Masters;
+using Abstraction.IService.Masters;
+using Services.Masters;
+using Aplication.Masters;
+using Repository.Masters;
+using Abstraction.IRepository.Masters;
 
 
 
@@ -149,6 +155,13 @@ namespace ApiProyectoPatata
             services.AddScoped<IProfileService,     ProfileService>();
             services.AddScoped<IProfileRepository,  ProfileRepository>();
 
+            services.AddScoped<ICategorysAplication, CategorysAplication>();
+            services.AddScoped<ICategorysService,    CategorysService>();
+            services.AddScoped<ICategorysRepository, CategorysRepository>();
+
+            services.AddScoped<IProvidersAplication, ProvidersAplication>();
+            services.AddScoped<IProvidersService,    ProvidersService>();
+            services.AddScoped<IProvidersRepository, ProvidersRepository>();
             #endregion
 
 

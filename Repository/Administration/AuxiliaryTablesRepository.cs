@@ -283,5 +283,54 @@ namespace Repository.Administration
 
         #endregion
 
+
+
+
+
+        public async Task<ResultDTO<UbigeoDto>> GetListUbigeo(UbigeoDto request)
+        {
+            ResultDTO<UbigeoDto> res = new ResultDTO<UbigeoDto>();
+            List<UbigeoDto> list = new List<UbigeoDto>();
+
+            try
+            {
+                var parameters = new DynamicParameters();
+              
+                parameters.Add("@p_iid_ubigeo", request.iid_ubigeo);
+
+                parameters.Add("@p_iid_department", request.iid_departament_ubigeo);
+                parameters.Add("@p_vname_department", request.vdescription_department_ubigeo);
+
+                parameters.Add("@p_iid_province", request.iid_province_ubigeo);
+                parameters.Add("@p_vname_province", request.vdescription_province_ubigeo);
+
+                parameters.Add("@p_iid_district", request.iid_district_ubigeo);
+                parameters.Add("@p_vname_district", request.vdescription_district_ubigeo);
+
+                parameters.Add("@p_itype_search", request.iid_search_type);
+
+
+                using (var cn = new SqlConnection(_connectionString))
+                {
+                    list = (List<UbigeoDto>)await cn.QueryAsync<UbigeoDto>("[dbo].[SP_UBIGEO_LIST]", parameters, commandType: System.Data.CommandType.StoredProcedure);
+                }
+
+                int list_count = list.ToList().Count;
+
+                res.IsSuccess = list_count > 0 ? true : false;
+                res.Message = list_count > 0 ? MessagesRes.strInformacionEncontrada : MessagesRes.strInformacionNoEncontrada;
+                res.iTotal_record = list_count;
+                res.Data = list.ToList();
+            }
+            catch (Exception e)
+            {
+                res.IsSuccess = false;
+                res.Message = MessagesRes.strInformacionNoEncontrada;
+                res.InnerException = e.Message.ToString();
+            }
+            return res;
+        }
+
+
     }
 }

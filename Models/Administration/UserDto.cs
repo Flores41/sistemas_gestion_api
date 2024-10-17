@@ -36,6 +36,7 @@ namespace Models.Administration
         public string? vlast_name_user { get; set; }
         public string? vfull_names_user { get; set; }
 
+        public string? vemail { get; set; }
 
         public int? iphone_user { get; set; }
         public string? vphone_user { get; set; }

@@ -241,5 +241,29 @@ namespace ApiSistemaVentas.Controllers.Administration
         }
 
         #endregion
+
+        #region UBIGEO
+        [HttpPost]
+        [Route("GetListUbigeo")]
+        public async Task<ActionResult> GetListUbigeo([FromBody] UbigeoDto request)
+        {
+            ResultDTO<UbigeoDto> res = new ResultDTO<UbigeoDto>();
+            try
+            {
+
+                res = await this.iIAuxiliaryTablesAplication.GetListUbigeo(request);
+
+                return Ok(res);
+            }
+            catch (Exception e)
+            {
+
+                res.InnerException = e.Message.ToString();
+
+                return BadRequest(res);
+            }
+        }
+
+        #endregion
     }
 }

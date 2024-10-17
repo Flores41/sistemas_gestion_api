@@ -17,5 +17,8 @@ namespace Abstraction.IService.Administration
         public Task<ResultDTO<TableDetailDto>> GetListTableDetail(TableDetailDto request);
         public Task<ResultDTO<TableDetailDto>> RegisterTableDetail(TableDetailDto request);
         public Task<ResultDTO<TableDetailDto>> DeleteTableDetail(TableDetailDto request);
+
+        public Task<ResultDTO<UbigeoDto>> GetListUbigeo(UbigeoDto request);
+
     }
 }
