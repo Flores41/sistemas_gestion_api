@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Administration
+namespace Models.Masters
 {
     public class CategorysDto : AuditoriaDto
     {

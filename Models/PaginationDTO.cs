@@ -19,8 +19,6 @@ namespace Model
     {
         public int? iid_user_token { get; set; }//id del usuario que se obtiene del token 
 
-        public int? iexport { get; set; }
-
         public int? istate_record { get; set; }
         public string? vstate_record { get; set; }
 

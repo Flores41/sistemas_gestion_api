@@ -38,9 +38,9 @@ namespace Models.Administration
     {
 
         public int? iid_ubigeo { get; set; }
-        public int? iid_departament_ubigeo { get; set; }
-        public int? iid_province_ubigeo { get; set; }
-        public int? iid_district_ubigeo { get; set; }
+        public string? iid_departament_ubigeo { get; set; }
+        public string? iid_province_ubigeo { get; set; }
+        public string? iid_district_ubigeo { get; set; }
 
         public string? vdescription_department_ubigeo { get; set; }
         public string? vdescription_province_ubigeo { get; set; }

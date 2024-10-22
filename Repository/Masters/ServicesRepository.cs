@@ -1,10 +1,10 @@
-﻿using Abstraction.IRepository.Administration;
+﻿using Abstraction.IRepository.Masters;
 using Dapper;
 using DataAccess.CustomConnection;
 using Microsoft.Extensions.Configuration;
 using Model.Util;
 using Model;
-using Models.Administration;
+using Models.Masters;
 using Repositoriy.Base;
 using System;
 using System.Collections.Generic;
@@ -12,18 +12,17 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Abstraction.IRepository.Masters;
 using System.Data.SqlClient;
 
 namespace Repository.Masters
 {
-    public class ProvidersRepository : BaseRepository, IProvidersRepository
+    public class ServicesRepository : BaseRepository, IServicesRepository
     {
         private string _connectionString = "";
         private IConfiguration Configuration;
 
 
-        public ProvidersRepository(ICustomConnection connection,
+        public ServicesRepository(ICustomConnection connection,
                     IConfiguration configuration) : base(connection)
         {
             Configuration = configuration;
@@ -31,23 +30,20 @@ namespace Repository.Masters
         }
 
 
-        public async Task<ResultDTO<ProvidersDto>> GetListProviders(ProvidersDto request)
+        public async Task<ResultDTO<ServicesDto>> GetListServices(ServicesDto request)
         {
-            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
-            List<ProvidersDto> list = new List<ProvidersDto>();
+            ResultDTO<ServicesDto> res = new ResultDTO<ServicesDto>();
+            List<ServicesDto> list = new List<ServicesDto>();
 
             try
             {
                 var parameters = new DynamicParameters();
-                parameters.Add("@p_iid_provider", request.iid_provider);
-                parameters.Add("@p_vrazon_social_provider", request.vrazon_social_provider);
-                parameters.Add("@p_vruc_provider", request.vruc_provider);
-                parameters.Add("@p_itipe_service_provider", request.itipe_service_provider);
-                parameters.Add("@p_vphone_number_provider", request.vphone_number_provider);
-                parameters.Add("@p_vemail_provider", request.vemail_provider);
-                parameters.Add("@p_vweb_address_provider", request.vweb_address_provider);
-                parameters.Add("@p_irating_provider", request.irating_provider);
-                parameters.Add("@p_iubigeo_provider", request.iubigeo_provider);
+                parameters.Add("@p_iid_Service", request.iid_service);
+                parameters.Add("@p_vname_service", request.vname_service);
+                parameters.Add("@p_iprovider_service", request.iid_provider_service);
+                parameters.Add("@p_type_price_service", request.vtype_price_service);
+                parameters.Add("@p_price_service", request.vprice_service);
+                parameters.Add("@p_type_events_service", request.ilst_type_events_service);
 
                 parameters.Add("@p_istate_record", request.istate_record);
                 parameters.Add("@p_index", request.iindex);
@@ -55,7 +51,7 @@ namespace Repository.Masters
 
                 using (var cn = new SqlConnection(_connectionString))
                 {
-                    list = (List<ProvidersDto>)await cn.QueryAsync<ProvidersDto>("[dbo].[SP_PROVIDER_LIST]", parameters, commandType: CommandType.StoredProcedure);
+                    list = (List<ServicesDto>)await cn.QueryAsync<ServicesDto>("[dbo].[SP_SERVICE_LIST]", parameters, commandType: CommandType.StoredProcedure);
                 }
 
                 int list_count = list.ToList().Count;
@@ -74,32 +70,36 @@ namespace Repository.Masters
             return res;
         }
 
-        public async Task<ResultDTO<ProvidersDto>> RegisterProvider(RegisterProvidersDto request)
+        public async Task<ResultDTO<ServicesDto>> RegisterService(ServicesRegisterDto request)
         {
-            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
+            ResultDTO<ServicesDto> res = new ResultDTO<ServicesDto>();
             try
             {
                 using (var cn = await mConnection.BeginConnection(true))
                 {
                     var parameters = new DynamicParameters();
-                    parameters.Add("@p_iid_provider", request.iid_provider);
-                    parameters.Add("@p_vrazon_social_provider", request.vrazon_social_provider);
-                    parameters.Add("@p_vruc_provider", request.vruc_provider);
-                    parameters.Add("@p_itipe_service_provider", request.itipe_service_provider);
-                    parameters.Add("@p_vphone_number_provider", request.vphone_number_provider);
-                    parameters.Add("@p_vemail_provider", request.vemail_provider);
-                    parameters.Add("@p_vweb_address_provider", request.vweb_address_provider);
-                    parameters.Add("@p_irating_provider", request.irating_provider);
-                    parameters.Add("@p_iubigeo_provider", request.iubigeo_provider);
+                    parameters.Add("@p_iid_Service", request.iid_service);
+                    parameters.Add("@p_vname_service", request.vname_service);
+                    parameters.Add("@p_vdescription_service", request.vdescription_service);
+
+                    parameters.Add("@p_iprovider_service", request.iid_provider_service);
+
+                    parameters.Add("@p_type_price_service", request.itype_price_service);
+                    parameters.Add("@p_price_service", request.vprice_service);
+
+                    parameters.Add("@p_type_events_service", request.ilst_type_events_service);
+
+                    parameters.Add("@p_references_service", request.lst_references_service);
+                    parameters.Add("@p_quantity_service", request.iquantity_service);
 
                     parameters.Add("@p_istate_record", request.istate_record);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
 
-                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_PROVIDER_REGISTER_UPDATE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
+                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_SERVICE_REGISTER_UPDATE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
                     {
                         while (lector.Read())
                         {
-                            res.Code = Convert.ToInt32(lector["iid_provider"].ToString());
+                            res.Code = Convert.ToInt32(lector["iid_service"].ToString());
                             res.IsSuccess = true;
                             res.Message = MessagesRes.strInformacionGrabada;
                         }
@@ -120,22 +120,22 @@ namespace Repository.Masters
             return res;
         }
 
-        public async Task<ResultDTO<ProvidersDto>> DeleteProvider(ProvidersDto request)
+        public async Task<ResultDTO<ServicesDto>> DeleteService(ServicesDto request)
         {
-            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
+            ResultDTO<ServicesDto> res = new ResultDTO<ServicesDto>();
             try
             {
                 using (var cn = await mConnection.BeginConnection(true))
                 {
                     var parameters = new DynamicParameters();
-                    parameters.Add("@p_iid_provider", request.iid_provider);
+                    parameters.Add("@p_iid_service", request.iid_service);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
 
-                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_PROVIDER_DELETE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
+                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_SERVICE_DELETE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
                     {
                         while (lector.Read())
                         {
-                            res.Code = Convert.ToInt32(lector["iid_provider"].ToString());
+                            res.Code = Convert.ToInt32(lector["iid_service"].ToString());
                             res.IsSuccess = true;
                             res.Message = MessagesRes.strInformacionEliminada;
                         }

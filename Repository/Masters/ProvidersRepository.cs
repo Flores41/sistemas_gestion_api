@@ -2,27 +2,28 @@
 using Dapper;
 using DataAccess.CustomConnection;
 using Microsoft.Extensions.Configuration;
-using Model;
 using Model.Util;
-using Models.Masters;
+using Model;
 using Repositoriy.Base;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abstraction.IRepository.Masters;
+using System.Data.SqlClient;
+using Models.Masters;
 
 namespace Repository.Masters
 {
-    public class CategorysRepository : BaseRepository, ICategorysRepository
+    public class ProvidersRepository : BaseRepository, IProvidersRepository
     {
         private string _connectionString = "";
         private IConfiguration Configuration;
 
 
-        public CategorysRepository(ICustomConnection connection,
+        public ProvidersRepository(ICustomConnection connection,
                     IConfiguration configuration) : base(connection)
         {
             Configuration = configuration;
@@ -30,23 +31,31 @@ namespace Repository.Masters
         }
 
 
-        public async Task<ResultDTO<CategorysDto>> GetListCategorys(CategorysDto request)
+        public async Task<ResultDTO<ProvidersDto>> GetListProviders(ProvidersDto request)
         {
-            ResultDTO<CategorysDto> res = new ResultDTO<CategorysDto>();
-            List<CategorysDto> list = new List<CategorysDto>();
+            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
+            List<ProvidersDto> list = new List<ProvidersDto>();
 
             try
             {
                 var parameters = new DynamicParameters();
-                parameters.Add("@p_iid_category", request.iid_category);
-                parameters.Add("@p_vname_category", request.vname_category);
+                parameters.Add("@p_iid_provider", request.iid_provider);
+                parameters.Add("@p_vrazon_social_provider", request.vrazon_social_provider);
+                parameters.Add("@p_vruc_provider", request.vruc_provider);
+                parameters.Add("@p_vtype_provider", request.vtype_provider);
+                parameters.Add("@p_vphone_number_provider", request.vphone_number_provider);
+                parameters.Add("@p_vemail_provider", request.vemail_provider);
+                parameters.Add("@p_vweb_address_provider", request.vweb_address_provider);
+                parameters.Add("@p_irating_provider", request.irating_provider);
+                parameters.Add("@p_iubigeo_provider", request.iubigeo_provider);
+
                 parameters.Add("@p_istate_record", request.istate_record);
                 parameters.Add("@p_index", request.iindex);
                 parameters.Add("@p_limit", request.ilimit);
 
                 using (var cn = new SqlConnection(_connectionString))
                 {
-                    list = (List<CategorysDto>)await cn.QueryAsync<CategorysDto>("[dbo].[SP_CATEGORY_LIST]", parameters, commandType: CommandType.StoredProcedure);
+                    list = (List<ProvidersDto>)await cn.QueryAsync<ProvidersDto>("[dbo].[SP_PROVIDER_LIST]", parameters, commandType: CommandType.StoredProcedure);
                 }
 
                 int list_count = list.ToList().Count;
@@ -65,24 +74,32 @@ namespace Repository.Masters
             return res;
         }
 
-        public async Task<ResultDTO<CategorysDto>> RegisterCategory(RegisterCategorysDto request)
+        public async Task<ResultDTO<ProvidersDto>> RegisterProvider(RegisterProvidersDto request)
         {
-            ResultDTO<CategorysDto> res = new ResultDTO<CategorysDto>();
+            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
             try
             {
                 using (var cn = await mConnection.BeginConnection(true))
                 {
                     var parameters = new DynamicParameters();
-                    parameters.Add("@p_iid_category", request.iid_category);
-                    parameters.Add("@p_vname_category", request.vname_category);
+                    parameters.Add("@p_iid_provider", request.iid_provider);
+                    parameters.Add("@p_vrazon_social_provider", request.vrazon_social_provider);
+                    parameters.Add("@p_vruc_provider", request.vruc_provider);
+                    parameters.Add("@p_vtype_provider", request.vtype_provider);
+                    parameters.Add("@p_vphone_number_provider", request.vphone_number_provider);
+                    parameters.Add("@p_vemail_provider", request.vemail_provider);
+                    parameters.Add("@p_vweb_address_provider", request.vweb_address_provider);
+                    parameters.Add("@p_irating_provider", request.irating_provider);
+                    parameters.Add("@p_iubigeo_provider", request.iubigeo_provider);
+
                     parameters.Add("@p_istate_record", request.istate_record);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
 
-                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_CATEGORY_REGISTER_UPDATE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
+                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_PROVIDER_REGISTER_UPDATE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
                     {
                         while (lector.Read())
                         {
-                            res.Code = Convert.ToInt32(lector["iid_category"].ToString());
+                            res.Code = Convert.ToInt32(lector["iid_provider"].ToString());
                             res.IsSuccess = true;
                             res.Message = MessagesRes.strInformacionGrabada;
                         }
@@ -103,22 +120,22 @@ namespace Repository.Masters
             return res;
         }
 
-        public async Task<ResultDTO<CategorysDto>> DeleteCategory(CategorysDto request)
+        public async Task<ResultDTO<ProvidersDto>> DeleteProvider(ProvidersDto request)
         {
-            ResultDTO<CategorysDto> res = new ResultDTO<CategorysDto>();
+            ResultDTO<ProvidersDto> res = new ResultDTO<ProvidersDto>();
             try
             {
                 using (var cn = await mConnection.BeginConnection(true))
                 {
                     var parameters = new DynamicParameters();
-                    parameters.Add("@p_iid_category", request.iid_category);
+                    parameters.Add("@p_iid_provider", request.iid_provider);
                     parameters.Add("@p_iuser_aud", request.iid_user_token);
 
-                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_CATEGORY_DELETE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
+                    using (var lector = await cn.ExecuteReaderAsync("[dbo].[SP_PROVIDER_DELETE]", parameters, commandType: CommandType.StoredProcedure, transaction: mConnection.GetTransaction()))
                     {
                         while (lector.Read())
                         {
-                            res.Code = Convert.ToInt32(lector["iid_category"].ToString());
+                            res.Code = Convert.ToInt32(lector["iid_provider"].ToString());
                             res.IsSuccess = true;
                             res.Message = MessagesRes.strInformacionEliminada;
                         }

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Model;
-using Models.Administration;
+using Models.Masters;
 using System.Security.Claims;
 
 namespace ApiGestionEventos.Controllers.Masters

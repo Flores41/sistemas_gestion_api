@@ -1,7 +1,7 @@
 ﻿using Abstraction.IAplication.Masters;
 using Abstraction.IService.Masters;
 using Model;
-using Models.Administration;
+using Models.Masters;
 using System;
 using System.Collections.Generic;
 using System.Linq;

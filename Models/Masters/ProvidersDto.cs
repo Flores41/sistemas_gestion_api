@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Administration
+namespace Models.Masters
 {
     public class ProvidersDto : AuditoriaDto
     {
@@ -15,8 +15,8 @@ namespace Models.Administration
         public string? vrazon_social_provider { get; set; }
 
 
-        public int? itipe_service_provider { get; set; }
-        public string? vtipe_service_provider { get; set; }
+        public string? vtype_provider { get; set; }
+        public string? vdescription_type_provider { get; set; }
 
 
         public string? vphone_number_provider { get; set; }
@@ -25,18 +25,19 @@ namespace Models.Administration
         public int? irating_provider { get; set; }
 
 
-        public int? iubigeo_provider { get; set; }
+        public string? iubigeo_provider { get; set; }
+        public string? vubigeo_provider { get; set; }
 
 
-        public int? iid_departament_provider { get; set; }
+        public string? iid_departament_provider { get; set; }
         public string? vname_departament_provider { get; set; }
 
 
-        public int? iid_province_provider { get; set; }
+        public string? iid_province_provider { get; set; }
         public string? vname_province_provider { get; set; }
 
 
-        public int? iid_district_provider { get; set; }
+        public string? iid_district_provider { get; set; }
         public string? vname_district_provider { get; set; }
     }
 
@@ -46,11 +47,11 @@ namespace Models.Administration
         public string? vcode_provider { get; set; }
         public string? vruc_provider { get; set; }
         public string? vrazon_social_provider { get; set; }
-        public int? itipe_service_provider { get; set; }
+        public string? vtype_provider { get; set; }
         public string? vphone_number_provider { get; set; }
         public string? vemail_provider { get; set; }
         public string? vweb_address_provider { get; set; }
         public int? irating_provider { get; set; }
-        public int? iubigeo_provider { get; set; }
+        public string? iubigeo_provider { get; set; }
     }
 }

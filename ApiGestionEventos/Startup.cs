@@ -25,6 +25,8 @@ using Services.Masters;
 using Aplication.Masters;
 using Repository.Masters;
 using Abstraction.IRepository.Masters;
+using Abstraction.IAplication.Util;
+using Aplication.Util;
 
 
 
@@ -130,6 +132,7 @@ namespace ApiProyectoPatata
             });
 
             #region Agregar Clases
+
             services.AddScoped<ITokenHandlerService, TokenHandlerService>();
 
             //services.AddScoped(typeof(ITokenHandlerService), typeof(TokenHandlerService));
@@ -162,6 +165,14 @@ namespace ApiProyectoPatata
             services.AddScoped<IProvidersAplication, ProvidersAplication>();
             services.AddScoped<IProvidersService,    ProvidersService>();
             services.AddScoped<IProvidersRepository, ProvidersRepository>();
+
+            services.AddScoped<IServicesAplication, ServicesAplication>();
+            services.AddScoped<IServicesService,    ServicesService>();
+            services.AddScoped<IServicesRepository, ServicesRepository>();
+
+            services.AddScoped<IUtilAplication, UtilAplication>();
+
+
             #endregion
 
 
@@ -214,8 +225,9 @@ namespace ApiProyectoPatata
 
             app.UseCors(_policyName);
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
+
 
             if (fglfrom == "1")
             {
