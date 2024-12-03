@@ -16,8 +16,12 @@ namespace Models.Administration
         public string? vlast_name { get; set; }
         public string? vfull_names { get; set; }
         public string? vemail { get; set; }
+
         public int? inumber_document { get; set; }
         public int? itype_document { get; set; }
+        public string? vtype_document { get; set; }
+
+        
         public int? iphone { get; set; }
         public string? vphone { get; set; }
 

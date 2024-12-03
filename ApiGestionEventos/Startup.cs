@@ -51,7 +51,7 @@ namespace ApiProyectoPatata
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
 
-                    Title = "Sweet Dreams.API",
+                    Title = "Sistema-Gestion-Eventos.API",
                     Version = "v1",
                     Description = "Api Para Sistema de Gestion de Eventos.",
                     TermsOfService = new Uri("https://sample.com/terms"),
@@ -169,6 +169,10 @@ namespace ApiProyectoPatata
             services.AddScoped<IServicesAplication, ServicesAplication>();
             services.AddScoped<IServicesService,    ServicesService>();
             services.AddScoped<IServicesRepository, ServicesRepository>();
+
+            services.AddScoped<IEventsAplication,   EventsAplication>();
+            services.AddScoped<IEventsService,      EventsService>();
+            services.AddScoped<IEventsRepository,   EventsRepository>();
 
             services.AddScoped<IUtilAplication, UtilAplication>();
 

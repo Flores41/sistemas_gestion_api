@@ -70,9 +70,10 @@ namespace Aplication.Util
                     client.Credentials = new System.Net.NetworkCredential(smtp.Usuario, smtp.Password);
                 }
 
-                MailMessage mensajeEmail = new();
-
-                mensajeEmail.From = email.De;
+                MailMessage mensajeEmail = new()
+                {
+                    From = email.De
+                };
                 string destinatariosPara = "";
                 if (email.Para != null)
                     foreach (string correo in email.Para)
@@ -108,7 +109,7 @@ namespace Aplication.Util
                 mensajeEmail.Subject = email.Titulo;
                 mensajeEmail.Body = email.Mensaje;
 
-                List<string> detalleAdjuntos = new();
+                List<string> detalleAdjuntos = [];
 
                 if (email.Adjuntos != null)
                     foreach (string adjunto in (email.Adjuntos))
