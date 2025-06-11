@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\repository\\masters\\eventsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCC8074-F2FE-4F7D-A97A-A28C39055E49}|Repository\\Repository.csproj|solutionrelative:repository\\masters\\eventsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\controllers\\administration\\auxiliarytablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\controllers\\administration\\auxiliarytablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAA0512A-FCE7-49B6-B822-876C0AE50B75}|Services\\Services.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\services\\masters\\eventsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAA0512A-FCE7-49B6-B822-876C0AE50B75}|Services\\Services.csproj|solutionrelative:services\\masters\\eventsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|c:\\users\\user\\documents\\sistemas\\extras\\sistema gestion eventos\\sistema-gestion-eventos-back\\apigestioneventos\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C70F8D1-B435-457A-B676-7417F966349A}|ApiGestionEventos\\ApiGestionEventos.csproj|solutionrelative:apigestioneventos\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuxiliaryTablesController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\Administration\\AuxiliaryTablesController.cs",
+              "RelativeDocumentMoniker": "ApiGestionEventos\\Controllers\\Administration\\AuxiliaryTablesController.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Controllers\\Administration\\AuxiliaryTablesController.cs",
+              "RelativeToolTip": "ApiGestionEventos\\Controllers\\Administration\\AuxiliaryTablesController.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAQwP0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T00:15:37.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Masters\\EventsRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Masters\\EventsRepository.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Repository\\Masters\\EventsRepository.cs",
+              "RelativeToolTip": "Repository\\Masters\\EventsRepository.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwGwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T19:21:22.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventsService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Masters\\EventsService.cs",
+              "RelativeDocumentMoniker": "Services\\Masters\\EventsService.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\Services\\Masters\\EventsService.cs",
+              "RelativeToolTip": "Services\\Masters\\EventsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T19:16:08.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Startup.cs",
+              "RelativeDocumentMoniker": "ApiGestionEventos\\Startup.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\SISTEMAS\\EXTRAS\\Sistema Gestion Eventos\\sistema-gestion-eventos-back\\ApiGestionEventos\\Startup.cs",
+              "RelativeToolTip": "ApiGestionEventos\\Startup.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA3wDUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T19:08:07.53Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
